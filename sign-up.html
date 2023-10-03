@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexandra Perez">
+    <meta name="description" content="This is a solution to the IndieBrew Sign Up Page challenge from Codewell.cc.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>IndieBrew | Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="signup-body">
+<header>
+    <navbar class="mobile-navbar">
+    <a href="index.html"><img class="logo" src="assets/Logo.svg"></a>
+        <a href="index.html"><img class="arrow-menu" src="assets/Back Arrow.svg"></a>
+    </navbar>
+</header>
+<section>
+<h1>Create your personalized feed.</h1>
+<ul class="signup-ul">
+    <li>
+        <strong>Over 20 resources.</strong> With resources ranging from Reddit to IndieHackers, we've got all your needs covered.
+    </li>
+    <li>
+        <strong>Delivered weekly.</strong> Every week at exactly Tuesday 12:00 P.M. EST - expect a value-packed digest right in your email.
+    </li>
+    <li>
+        <strong>Unlimited ideas.</strong> With all the ideas you'll be reading about, what's stopping you from creating a sustainable startup?
+    </li>
+</ul>
+<form>
+    <legend>Create your IndieBrew Account</legend>
+    <br>
+    <p>
+        <label class="label" for="email">Email</label>
+        <br>
+        <input type="email" placeholder="john@example.com" autocomplete="on" required>
+    </p>
+    <br>
+    <p>
+        <label class="label" for="fullName">Full Name</label>
+        <br>
+        <input type="text" placeholder="John Doe" autocomplete="on" required>
+    </p>
+    <br>
+    <p>
+        <label class="label" for="password">Password</label>
+        <br>
+        <input type="password" placeholder="At least 8 characters" minlength="8">
+    </p>
+    <br>
+    <p>
+        <input type="checkbox" required>
+        <label class="label" for ="checkbox">By creating an account on IndieBrew, you agree to the <span><a href="blank.html" class="form-anchor">Terms & Conditions</a></span>.
+    </p>
+    <br>
+    <button id="form-button" class="form-button">Create an Account</button>
+</form>
+</section>
+<script>
+    const button = document.getElementById('form-button');
+
+    button.addEventListener('click', function() {
+    alert("Welcome to IndieBrew! An email has been sent to verify your account.");
+    });
+</script>
+</body>
+</html>
